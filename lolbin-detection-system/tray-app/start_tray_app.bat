@@ -1,0 +1,3 @@
+@echo off
+echo Starting LOLBin Monitor Tray Application...
+python lolbin_tray_app.py

@@ -30,7 +30,7 @@ export const fetchAlerts = async (): Promise<DetectionAlert[]> => {
     toast.error("Failed to connect to monitoring service");
     
     // During development, generate some mock alerts
-    const { generateRandomAlert } = require("./lolbinsService");
+    const { generateRandomAlert } = await import("./lolbinsService");
     return Array.from({ length: 5 }, () => generateRandomAlert());
   }
 };
